@@ -34,7 +34,7 @@
         </tr>
     </table>
 
-    <form action="userList" method="get">
+    <form action="userList" method="post">
         <label for="username">Name</label>
         <br>
         <input type="text" name="username" id="username">
@@ -56,12 +56,20 @@
         <label for="howhigh1"> I am not high </label>
         <input type="radio" name="answer" id="howhigh1" value="I am not high"><br>
 
-        <input type="button" value="send">
+        <input type="button" value="send" id="HomeSend">
+        
+        <input type="button" value="AddRow" id="NewRow">
 
     </form>
 
     <iframe title="laragon" class="frameStyle" src="https://laragon.org/download" height="500" width="100%"></iframe>
 
 </body>
-<?php include_once 'partials/footer.php' ?>
+
+<script src="scripts/script.js"></script>
+
+<?php 
+    include_once 'partials/footer.php'
+?>
 </html>
+
