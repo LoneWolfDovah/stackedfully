@@ -62,4 +62,5 @@
     <iframe title="laragon" class="frameStyle" src="https://laragon.org/download" height="500" width="100%"></iframe>
 
 </body>
+<?php include_once 'partials/footer.php' ?>
 </html>
