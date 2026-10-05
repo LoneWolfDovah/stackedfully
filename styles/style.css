@@ -40,3 +40,17 @@
 .tableBody:hover {
     background-color: #e7e7e7;
 }
+
+.frameStyle {
+    border: 5px solid;
+    border-radius: 8px;
+    display: block;
+    margin: 30px auto;
+}
+
+.imageStyle{
+    border: 1px solid #2b063b;
+    border-radius: 10px;
+    margin: 30px auto;
+    display: block;
+}
