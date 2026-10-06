@@ -10,8 +10,11 @@
     <body>
         <?php include_once 'partials/header.php' ?>
         <main>
-            
+            <section id="film-card-section">
+                
+            </section>
         </main>
         <?php include_once 'partials/footer.php' ?>
     </body>
 </html>
+<script src="scripts/script.js"></script>

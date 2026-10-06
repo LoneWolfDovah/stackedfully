@@ -1,0 +1,23 @@
+body {
+    background-color: #131720;
+}
+
+#film-card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.film-card {
+    background: #fff;
+    color: rgb(126, 7, 7);
+    border: 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.poster-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

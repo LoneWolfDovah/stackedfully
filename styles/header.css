@@ -49,3 +49,47 @@
     display: flex;
     justify-content: flex-end;
 }
+
+/*======================================
+            Search bar styles
+======================================*/
+
+.middle-middle .search-bar {
+    width: 100%;
+    max-width: 500px;
+}
+
+#search-bar {
+    width: 100%;
+}
+
+#search-query {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+#search-query:focus {
+    border-color: #555;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.top-middle .site-title,
+.top-right .acc-link,
+.bottom-right .main-navigation .home-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*======================================*/
+.site-logo img {
+    width: 180px;
+    height: auto;
+}

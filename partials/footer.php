@@ -33,14 +33,13 @@
     
                 </div>
                 <div class="footer-bottom-middle">
-                    <p>
+                    <p class="copyright-text">
                         &copy; <?php
                         echo date("d.m.y");?>
                         Stackedfully
                     </p>
                 </div>
                 <div class="footer-bottom-right">
-    
                 </div>
             </div>
         </div>
