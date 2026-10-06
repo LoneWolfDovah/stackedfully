@@ -1,3 +1,51 @@
-.site-header{
-    width: 100%;
+.header-inner {
+    display: flex;
+    align-items: center;
+}
+
+.header-top .header-inner > div,
+.header-middle .header-inner > div,
+.header-bottom .header-inner > div {
+    flex: 1;
+}
+
+.top-left {
+    display: flex;
+    justify-content: flex-start;
+}
+.top-middle {
+    display: flex;
+    justify-content: center;
+}
+.top-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.middle-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.middle-middle {
+    display: flex;
+    justify-content: center;
+}
+
+.middle-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom-left {
+    display: flex;
+    justify-content: flex-start;
+}
+.bottom-middle{
+    display: flex;
+    justify-content: center;
+}
+.bottom-right{
+    display: flex;
+    justify-content: flex-end;
 }
