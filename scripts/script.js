@@ -32,7 +32,8 @@ async function returnMovies(url) {
     filmSection.innerHTML = "";
     const response = await fetch(url)
     const data = await response.json();
-
+    
+    // Movie card pravljenje za pocetnu
     data.results.forEach(movie => {
 
         const card = document.createElement("div");
@@ -52,6 +53,23 @@ async function returnMovies(url) {
         title.textContent = movie.title;
 
         card.appendChild(title);
+
+        const year = document.createElement("p");
+        year.classList.add("release-year");
+        year.textContent ="release year: " + movie.release_date.substring(0,4);
+
+        card.appendChild(year);
+
+        const rating = document.createElement("p");
+        rating.classList.add("movie-rating");        
+
+        rating.innerHTML = `
+        <img src="/img/pics/rating.png" alt="">
+        ${movie.vote_average.toFixed(1)}`;
+
+        // rating.textContent = `Hearth ${movie.vote_average.toFixed(1)}`;
+
+        card.appendChild(rating);
 
         filmSection.appendChild(card);
     });
@@ -89,6 +107,7 @@ form.addEventListener("submit", function(event){
 
     currentURL = new URL(searchURL);
     currentPage = 1;
+
 
     currentURL.searchParams.set("page", currentPage);
 

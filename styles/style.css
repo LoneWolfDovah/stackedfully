@@ -4,7 +4,7 @@ body {
 
 #film-card-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
 }
@@ -20,4 +20,112 @@ body {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/*===========================
+============================*/
+body {
+    background-color: #131720;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Movie grid */
+#film-card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Movie card */
+.film-card {
+    background-color: #1c2230;
+    color: white;
+    border: 1px solid #2b3345;
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.film-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Poster */
+.poster-img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+/* Movie title */
+.movie-title {
+    font-size: 18px;
+    margin: 12px 12px 6px;
+    line-height: 1.3;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Release year */
+.release-year {
+    color: #9da5b5;
+    font-size: 14px;
+    margin: 0 12px 8px;
+}
+
+/* Rating */
+.movie-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    margin: 0 12px 15px;
+}
+
+/* Rating icon */
+.movie-rating img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+
+    /* Turn black icon into gold */
+    filter: invert(77%) sepia(89%) saturate(1000%)
+            hue-rotate(5deg) brightness(105%);
+}
+
+/* Pagination */
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 20px 40px;
+}
+
+#pagination button {
+    background-color: #1c2230;
+    color: white;
+    border: 1px solid #2b3345;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+#pagination button:hover {
+    background-color: #293246;
 }
