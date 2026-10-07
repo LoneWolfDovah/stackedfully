@@ -13,6 +13,7 @@
             <section id="film-card-section">
                 
             </section>
+            <div id="pagination"></div>
         </main>
         <?php include_once 'partials/footer.php' ?>
     </body>

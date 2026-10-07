@@ -5,7 +5,7 @@
             <div class="top-left">
                 <div class="site-logo">
                     <a class="logo-img" href="/">
-                        <img src="\img\pics\logoipsum-440.png" alt="">
+                        <img src="\img\pics\logo.png" alt="">
                     </a>
                 </div>
             </div>

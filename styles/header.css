@@ -1,8 +1,8 @@
 .header-inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 }
-
 .header-top .header-inner > div,
 .header-middle .header-inner > div,
 .header-bottom .header-inner > div {
@@ -89,7 +89,9 @@
 
 
 /*======================================*/
+
 .site-logo img {
-    width: 180px;
+    width: 120px;
     height: auto;
+    display: block;
 }
