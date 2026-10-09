@@ -24,9 +24,53 @@ nextPage.textContent = "Next";
 pagination.appendChild(nextPage);
 
 
+const allMovies = document.querySelector("#all-genres");
+const HorroMovies = document.querySelector("#horror-listings");
+
+// allMovies.addEventListener("click", function(){
+//     console.log("All movies clicked");
+//     const url = new URL(apiLink);
+//     url.searchParams.delete("with_genres");
+//     returnMovies(url);
+// });
+
+// HorroMovies.addEventListener("click", function(){
+//     console.log("Horrors clicked");
+//     const url = new URL(apiLink);
+//     url.searchParams.set("with_genres", "27");
+
+//     returnMovies(url);
+// });
 
 
-returnMovies(apiLink);
+returnMovies(currentURL);
+
+const genreListing = document.querySelector(".genre-listing");
+
+genreListing.addEventListener("click", function(event) {
+    const button = event.target.closest("button[data-genre]");
+
+    if (!button) return;
+
+    const genreId = button.dataset.genre;
+
+    currentPage = 1;
+    currentURL = new URL(apiLink);
+
+    if (genreId !== "") {
+        currentURL.searchParams.set("with_genres", genreId);
+    } else {
+        currentURL.searchParams.delete("with_genres");
+    }
+
+    currentURL.searchParams.set("page", currentPage);
+
+    returnMovies(currentURL);
+});
+
+
+
+// returnMovies(apiLink);
 
 async function returnMovies(url) {
     filmSection.innerHTML = "";

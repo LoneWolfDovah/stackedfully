@@ -10,6 +10,7 @@
     <body>
         <?php include_once 'partials/header.php' ?>
         <main>
+
             <section id="film-card-section">
                 
             </section>

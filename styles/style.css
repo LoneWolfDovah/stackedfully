@@ -129,3 +129,88 @@ body {
 #pagination button:hover {
     background-color: #293246;
 }
+
+
+/*====================================
+Mega meni css
+===================================*/
+/* Main menu container */
+.format-type {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 15px 30px;
+    /* background-color: #1c2230; */
+    /* border-bottom: 1px solid #2b3345; */
+}
+
+/* Individual menu items */
+.movies-menu-item,
+.tvShows-menu-item {
+    position: relative;
+}
+
+/* Menu headings */
+.movies-menu-item h3,
+.tvShows-menu-item h3 {
+    margin: 0;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Dropdown menus: hidden by default */
+.genre-listing {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+
+    min-width: 220px;
+    max-height: 400px;
+    overflow-y: auto;
+
+    background-color: #1c2230;
+    border: 1px solid #2b3345;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Show the dropdown when hovering over MOVIES */
+.movies-menu-item:hover .genre-listing {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dropdown buttons */
+.genre-listing button {
+    width: 100%;
+    padding: 12px 16px;
+
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Highlight a genre on hover */
+.genre-listing button:hover {
+    background-color: #293246;
+    color: #f9ad1b;
+}
+
+/* Keyboard accessibility */
+/* .movies-menu-item:focus-within .genre-listing {
+    display: flex;
+    flex-direction: column;
+} */
+.header-bottom{
+    margin-top: 10px;
+
+    /* background-color: #1c2230; */
+    background: linear-gradient( to top, #1c2230 0%, #131720 100% );
+    border-bottom: 1px solid #2b3345;
+}
